@@ -65,7 +65,7 @@ message GetDestination {
   // If, for instance, the token encodes a namespace or some locality
   // information, the service may alter its results to take this locality into
   // account.
-  string context_token = 3;
+  map<string, string> context_token = 3;
 }
 
 message Update {
